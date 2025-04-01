@@ -20,28 +20,6 @@ def lmnx9_login():
             open('cookie.txt','w').write(cookie)
             open('token.txt','w').write(token)
             Lmnx9("</> 🚭Login Successful🔞 !!! ")
-import os,re,sys,bs4,time,json,random
-import datetime,requests,rich,string
-from os import system as lmnx9
-from rich import print as Lmnx9
-DTX={'1':'januari','2':'februari','3':'maret','4':'april','5':'mei','6':'juni','7':'juli','8':'agustus','9':'september','10':'oktober','11':'november','12':'desember'}
-lmnx9('xdg-open https://t.me/Abdullha_404')
-tgl=datetime.datetime.now().day
-bln=DTX[(str(datetime.datetime.now().month))]
-thn=datetime.datetime.now().year
-lj_lmn=str(tgl)+" "+str(bln)+" "+str(thn)
-ses=requests.Session()
-def lmnx9_login():
-    lmnx9('clear')
-    Lmnx9(credit)
-    cookie=input('</> 🥵Login Your Fucking Cookies🥵 : ')
-    try:
-        dark_XL=requests.get("https://business.facebook.com/business_locations",headers={"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","cookie":cookie})
-        token=re.search("(EAAG\w+)", dark_XL.text).group(1)
-        if "EAAG" in str(token):
-            open('cookie.txt','w').write(cookie)
-            open('token.txt','w').write(token)
-            Lmnx9("</> 🚭Login Successful🔞 !!! ")
             bot(cookie)
     except AttributeError:
         Lmnx9("</> 😭Cookie Expired😓 !!")
@@ -121,4 +99,3 @@ credit="""[bold red]＠[bold green]
 """
 if __name__ in '__main__':
     lmnx9_login()
-￼Enter
